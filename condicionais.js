@@ -11,7 +11,7 @@ let nota = 10;
 // }
 
 
-switch (nota) {
+switch (true) {
     case nota === 10:
         return console.log('Excelente!')
     // break;
