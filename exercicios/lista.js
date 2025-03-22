@@ -177,6 +177,7 @@ function calcularValorFinal(valor, taxa) {
 let valor = 3
 let taxaPercentual  = 6
 
+
 console.log("O valor ",valor," total com a taxa aplicada:", (calcularValorFinal(valor, taxa)).toFixed(2));
 
 // ---
