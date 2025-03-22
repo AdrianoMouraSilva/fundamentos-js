@@ -3,7 +3,7 @@ function contagem(limite) {
     let somaImpares = 0;
 
 
-    for (let i = 0; i <= limite; i++) {
+    for (let i =  limite; i >= 0; i--) {
         let resto = i % 2;
 
         if (resto === 0) {
@@ -20,7 +20,4 @@ function contagem(limite) {
 //     console.log("Soma dos numero impar :",soma);
  }
 
- console.log(contagem(10));
-
- 
-
+ console.log(contagem(20));
