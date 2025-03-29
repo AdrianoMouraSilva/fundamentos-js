@@ -72,8 +72,8 @@ function idadePorNascimento(dataNascimento) {
 }
 
 const handleCorrectAge = (name, dtBirthday) => {
-    let dt = new date();
-    let result = dt.getYear() - dtBirthday;
+    let dt = new Date();
+    let result = dt.getFullYear() - dtBirthday;
     return (`Olá, ${name}, você está com ${result} anos de idade`)
 }
 
@@ -106,3 +106,29 @@ console.log(today.getDate());
 
 console.log(today.getTime());
 
+const product = {
+    name: 'Tv Samsung 42',
+    category: 'eletronic',
+    price: 1669.99,
+    feedback: [
+        {
+            clientName: 'Marilsa',
+            message: 'Entrega rápida e funcional.'
+
+        },
+        {
+            clientName: 'Paulo Silva',
+            message: 'Pessimo produto, num compensa.'
+        }
+    ]
+}
+
+
+// DESERTRUTURAÇÃO
+const { price,feedback } = product;
+
+console.log(product.price,'Manipulação de obj simples');
+console.log(price,'Manipulação de obj em desestruturação');
+
+console.log(feedback[1].clientName);
+console.log(product.feedback[1].clientName);
