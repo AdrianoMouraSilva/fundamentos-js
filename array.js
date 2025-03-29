@@ -49,7 +49,7 @@ console.log("Index = ", fruits);
 console.log("Ultimo item do array = ",fruits[fruits.length - 1])
 
 // Criar um array de numeros 0 a 10
-const numeros = [1,2,3,4,5,6,7,8,9,10]
+
 
 // 
 console.log('\n');
@@ -72,3 +72,24 @@ console.log(`Primeiro nome: ${arrFullName[0]}, ultimo nome: ${arrFullName[arrFul
 
 console.log(arrFullName.slice(1,2));
 console.log(arrFullName.slice(-1));
+
+
+function primeiroUltimoNome(nome) {
+    let arrNome = nome.split(' ');//Método string fatia pelo espaço vazio
+
+    let primeiroNome = arrNome[0];//Primero nome
+    let ultimoNome = arrNome[arrNome.length - 1];//Ultimo nome
+
+    return `Ola ${primeiroNome} ${ultimoNome }`
+}
+
+console.log(primeiroUltimoNome("Adriano Moura da Silva"));
+
+
+const numeros = [1,2,3,4,5,6,7,8,9,10]
+
+numeros.forEach((num) => {
+    console.log(num);
+});
+
+
